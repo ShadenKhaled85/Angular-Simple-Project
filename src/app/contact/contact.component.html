@@ -1,0 +1,42 @@
+<section class="contact min-vh-100 py-5">
+  <div class="container">
+    <div class="contact-title py-3">
+      <h2 class="fs-1 navy-color text-uppercase fw-bolder text-center pt-5">contact component</h2>
+      <div class="linesStar d-flex justify-content-center align-items-center">
+        <div class="navy-line line"></div>
+        <i class="fa fa-star navy-color px-3"></i>
+        <div class="navy-line line"></div>
+      </div>
+    </div>
+    <form class="w-50 p-3 mx-auto mt-5 ng-untouched ng-pristine ng-valid">
+      <div class="form-group position-relative mb-4">
+        <label [class.floating]="userFocused || userName" for="userName"
+          class="position-relative top-0 form-label">userName : </label>
+        <input [(ngModel)]="userName" id="userName" type="text" placeholder="userName" name="userName"
+          class="form-control  peer border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+      </div>
+
+      <div class="form-group position-relative mb-4">
+        <label [class.floating]="userFocused || userAge" for="userAge"
+          class="position-relative top-0 form-label">userAge : </label>
+        <input [(ngModel)]="userAge" id="userAge" type="text" placeholder="userAge" name="userAge"
+          class="form-control peer border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+      </div>
+      <div class="form-group position-relative mb-4">
+        <label [class.floating]="userFocused || userEmail" for="userEmail"
+          class="position-relative top-0 form-label">userEmail : </label>
+        <input [(ngModel)]="userEmail" id="userEmail" type="text" placeholder="userEmail" name="userEmail"
+          class="form-control peer border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+      </div>
+
+      <div class="form-group position-relative mb-4">
+        <label [class.floating]="userFocused || userPassword" for="userPassword"
+          class="position-relative top-0 form-label">userPassword : </label>
+        <input [(ngModel)]="userPassword" id="userPassword" type="text" placeholder="userPassword" name="userPassword"
+          class="form-control border-0 border-bottom py-3 position-relative ng-untouched ng-pristine ng-valid">
+      </div>
+
+      <button class="btn mt-4 text-white" style="background-color: #1abc9c;"> send Message </button>
+    </form>
+  </div>
+</section>

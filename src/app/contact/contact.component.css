@@ -1,0 +1,32 @@
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  padding-top: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.form-label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  font-size: 1rem;
+  color: transparent;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-label.floating {
+  top: 0;
+  font-size: 1rem;
+  color: #1abc9c;
+  transform: translateY(0);
+  opacity: 1;
+}

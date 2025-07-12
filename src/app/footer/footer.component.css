@@ -1,0 +1,13 @@
+.navyBg{
+  background-color: var(--primary-color);
+}
+
+.darkNavyBg{
+  background-color: #1a252f;
+}
+
+.rounded-icon{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
